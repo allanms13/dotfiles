@@ -16,11 +16,9 @@ Configuración personal de mi entorno Arch Linux + HyDE + Hyprland.
 
 ## Instalación
 
-```bash
-git clone https://github.com/allanms13/dotfiles ~/dotfiles
-cd ~/dotfiles
-./install.sh
-```
+    git clone https://github.com/allanms/dotfiles ~/dotfiles
+    cd ~/dotfiles
+    ./install.sh
 
 ## Atajos principales
 
@@ -32,4 +30,6 @@ cd ~/dotfiles
 | Super + F2 | Selector tema |
 | Super + L | Bloquear |
 | Super + V | Ventana flotante |
+| Super + G | Game launcher |
 | Super + 1-5 | Cambiar workspace |
+| Super + Shift + S | Captura de pantalla |
