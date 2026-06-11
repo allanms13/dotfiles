@@ -1,0 +1,7 @@
+icon-size=48
+full-size=false
+autohide=true
+autohide-delay=200
+layer=overlay
+position=bottom
+exclusive=false
