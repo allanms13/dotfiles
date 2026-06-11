@@ -19,13 +19,14 @@ fi
 yay -S --needed visual-studio-code-bin ani-cli grimblast-git
 
 # Crear symlinks
-ln -sf ~/dotfiles/hypr ~/.config/hypr
-ln -sf ~/dotfiles/waybar ~/.config/waybar
-ln -sf ~/dotfiles/fish ~/.config/fish
-ln -sf ~/dotfiles/kitty ~/.config/kitty
-ln -sf ~/dotfiles/nvim ~/.config/nvim
-ln -sf ~/dotfiles/rofi ~/.config/rofi
-ln -sf ~/dotfiles/dunst ~/.config/dunst
+configs=(hypr waybar fish kitty nvim rofi dunst)
+
+for config in "${configs[@]}"; do
+    rm -rf ~/.config/$config
+    ln -sf ~/dotfiles/$config ~/.config/$config
+done
+
+rm -rf ~/.config/nwg-dock-hyprland
 ln -sf ~/dotfiles/nwg-dock ~/.config/nwg-dock-hyprland
 
 echo "==> Listo! Reinicia sesión para aplicar todo."
